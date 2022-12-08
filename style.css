@@ -87,7 +87,11 @@ body{
   font-size: 18px;
 }
 
-  /* background-color: #1e2862;  */
+.menu_right ul li a.active span{
+  background-color: #dadada;
+  box-shadow: 0px 0px 14px 4px #dadada;
+  transform: rotate(45deg);
+}
   
 /* При желании пункты меню можно сделать круглыми
 .menu_right ul li a span {
