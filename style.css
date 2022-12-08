@@ -1,0 +1,106 @@
+body{
+  margin: 0px;
+}
+.block{
+  height: 1000px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #FFF;
+  padding: 40px 0;
+}
+.one{
+   background: #000;
+}
+.two{
+    background: #939346;
+}
+.three{
+  background: #CC6633;
+}
+.four{
+  background: #33CC66;
+}
+
+
+.menu_right {
+  position: fixed; 
+  top: 35%;
+  right: 40px;
+}
+
+.menu_right ul {
+  list-style-type: none;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu_right ul li {
+  position: relative;
+}
+
+.menu_right ul li a span {
+  display: block;
+  background-color: #8bc34a;
+  /* background-color: #673ab9; */
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+}
+
+
+
+.menu_right ul li a:hover span {
+  background-color: #dadada;
+  box-shadow: 0px 0px 14px 4px #dadada;
+  transform: rotate(45deg);
+
+}
+
+.menu_right ul li a div {
+  position: absolute;
+  right: 30px;
+  top: -10px;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: opacity 1.5s;
+}
+
+.menu_right ul li a:hover>div {
+  position: absolute;
+  right: 30px;
+  top: -10px;
+  opacity: 1;
+  padding: 8px 25px;
+  color: #fff;
+  overflow: visible;
+  background-color: #0a5014;
+  /* background-color: #1e2862;  */
+  border: 1px solid #9e9e9e;
+  border-radius: 5px;
+  white-space: pre;
+  height: 20px;
+  font-size: 18px;
+}
+
+  /* background-color: #1e2862;  */
+  
+/* При желании пункты меню можно сделать круглыми
+.menu_right ul li a span {
+  display: block;
+  background-color: #dadada;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 4px #dadada;
+} 
+
+.menu_right ul li a:hover span {
+  background-color: #8bc34a;
+  box-shadow: 0px 0px 14px 4px #dadada;
+}
+*/
